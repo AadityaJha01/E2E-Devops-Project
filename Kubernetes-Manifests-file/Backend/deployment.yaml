@@ -29,7 +29,7 @@ spec:
         imagePullPolicy: Always
         env:
           - name: USE_DB_AUTH
-            value: "true"
+            value: "false"
           - name: MONGO_CONN_STR
             value: mongodb://mongodb-svc:27017/todo?directConnection=true
           - name: MONGO_USERNAME
