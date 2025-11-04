@@ -41,7 +41,7 @@ variable "endpoint-public-access" {}
 variable "addons" {
   type = list(object({
     name    = string
-    version = string
+    version = optional(string)
   }))
 }
 variable "ondemand_instance_types" {}
