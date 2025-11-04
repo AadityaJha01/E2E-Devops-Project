@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git credentialsId: 'GITHUB', url: 'https://github.com/AmanPathak-DevOps/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project.git'
+                git credentialsId: 'GITHUB', url: 'https://github.com/AadityaJha01/E2E-Devops-Project.git'
             }
         }
         stage('Trivy File Scan') {
@@ -55,8 +55,8 @@ pipeline {
         }
         stage('Update Deployment file') {
             environment {
-                GIT_REPO_NAME = "End-to-End-Kubernetes-Three-Tier-DevSecOps-Project"
-                GIT_USER_NAME = "AmanPathak-DevOps"
+                GIT_REPO_NAME = "E2E-Devops-Project"
+                GIT_USER_NAME = "AadityaJha01"
             }
             steps {
                 dir('Kubernetes-Manifests-file/Backend') {
