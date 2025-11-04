@@ -28,6 +28,8 @@ spec:
         image: 215764924067.dkr.ecr.us-east-1.amazonaws.com/backend:1
         imagePullPolicy: Always
         env:
+          - name: USE_DB_AUTH
+            value: "true"
           - name: MONGO_CONN_STR
             value: mongodb://mongodb-svc:27017/todo?directConnection=true
           - name: MONGO_USERNAME
