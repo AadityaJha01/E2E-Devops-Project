@@ -37,12 +37,12 @@ addons = [
     version = "v1.20.0-eksbuild.1"
   },
   {
-    name    = "coredns"
-    # version = null  # Let EKS auto-select latest compatible version
+    name = "coredns"
+    # Let EKS auto-select latest compatible version (no version specified)
   },
   {
-    name    = "kube-proxy"
-    # version = null  # Let EKS auto-select latest compatible version
+    name = "kube-proxy"
+    # Let EKS auto-select latest compatible version (no version specified)
   },
   {
     name    = "aws-ebs-csi-driver"

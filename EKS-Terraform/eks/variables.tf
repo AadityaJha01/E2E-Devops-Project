@@ -46,6 +46,6 @@ variable "max_capacity_spot" {}
 variable "addons" {
   type = list(object({
     name    = string
-    version = string
+    version = optional(string)
   }))
 }
